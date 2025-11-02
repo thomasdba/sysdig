@@ -72,6 +72,7 @@ jobs:
           RANLIB: zig ranlib
         run: |
           cmake \
+            -DMUSL_OPTIMIZED_BUILD=ON \
             -DUSE_BUNDLED_DEPS=ON \
             -DBUILD_BPF=OFF \
             -DBUILD_DRIVER=OFF \
